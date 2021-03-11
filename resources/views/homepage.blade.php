@@ -128,7 +128,7 @@
 
 @extends('layout.app')
 @section('content')
-<div class="layout-homepage">
+<div style="background-image:url({{asset('img/mainback.jpg')}})" class="layout-homepage">
 <div class="container">
   @foreach ($array as $key=>$pasta)
     <a href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
