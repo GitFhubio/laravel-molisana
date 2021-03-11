@@ -139,6 +139,12 @@
  <div class="descrizione"><p>{{ $array[$idProduct]['descrizione'] }}</p></div>
 </div>
  </div>
+<div class="angle-left">
+<i class="fas fa-angle-left"></i>
+</div>
+<div class="angle-right">
+<i class="fas fa-angle-right"></i>
+</div>
   </div>
 
 @endsection
