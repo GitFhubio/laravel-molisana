@@ -8,13 +8,14 @@
 }
 .header ul {
   margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 22px;
 }
 .header ul li {
   display: inline-block;
 }
 .header ul li a {
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
 }
 .header ul li:hover a {
@@ -80,7 +81,7 @@
 }
 
 .footer {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .footer .container {
   width: 100%;
