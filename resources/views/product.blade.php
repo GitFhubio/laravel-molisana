@@ -133,6 +133,7 @@
  <div class="layer-product">
    <div class="container">
  <div class="box-product">
+<p class="title">{{ $array[$idProduct]['titolo'] }}</p>
     <img src="{{$array[$idProduct]['src-h']}}" alt="">
    <img src="{{$array[$idProduct]['src-p']}}" alt="">
  <div class="descrizione"><p>{{ $array[$idProduct]['descrizione'] }}</p></div>

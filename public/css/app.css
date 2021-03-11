@@ -69,8 +69,15 @@
 .layer-product .box-product {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
+}
+.layer-product .box-product .title {
+  color: #000067;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 30px;
 }
 .layer-product .box-product img {
   height: 440px;
