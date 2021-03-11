@@ -130,7 +130,7 @@
 @section('content')
 
   @foreach ($array as $key=>$pasta)
-    <a href="/product/{{$key + 1}}"><div style="background-image:url({{$pasta['src']}})" class="box">
+    <a href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
       {{-- {{$pasta['titolo']}}
         {{$pasta['src']}} --}}
     </div></a>
