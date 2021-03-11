@@ -130,13 +130,41 @@
 @section('content')
 <div style="background-image:url({{asset('img/mainback.jpg')}})" class="layout-homepage">
 <div class="container">
-  @foreach ($array as $key=>$pasta)
-    <a href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
-      {{-- {{$pasta['titolo']}}
-        {{$pasta['src']}} --}}
-    </div></a>
-  @endforeach
+  <h1>Le lunghe</h1>
+  <div class="pasta-lunga">
 
+  @foreach ($array as $key=>$pasta)
+    @if ($pasta['tipo'] == "lunga" )
+      <a href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
+        {{-- {{$pasta['titolo']}}
+          {{$pasta['src']}} --}}
+      </div></a>
+    @endif
+    @endforeach
+  </div>
+      <h1>Le corte</h1>
+<div class="pasta-corta">
+    @foreach ($array as $key=>$pasta)
+    @if ($pasta['tipo'] == "corta" )
+      <a href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
+        {{-- {{$pasta['titolo']}}
+          {{$pasta['src']}} --}}
+      </div></a>
+    @endif
+    @endforeach
+  </div>
+    <h1>Le cortissime</h1>
+    <div class="pasta-cortissima">
+    @foreach ($array as $key=>$pasta)
+    @if ($pasta['tipo'] == "cortissima" )
+      <a href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
+        {{-- {{$pasta['titolo']}}
+          {{$pasta['src']}} --}}
+      </div></a>
+    @endif
+
+  @endforeach
+  </div>
 </div>
 </div>
 @endsection

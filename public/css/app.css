@@ -27,6 +27,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  padding: 30px;
   background-size: cover;
 }
 .layout-homepage .container {
@@ -34,6 +35,13 @@
   height: 100%;
   justify-content: center;
   max-width: 1200px;
+}
+.layout-homepage .container h1 {
+  margin-left: 10px;
+  color: #000067;
+  text-transform: uppercase;
+}
+.layout-homepage .container .pasta-corta, .layout-homepage .container .pasta-lunga, .layout-homepage .container .pasta-cortissima {
   display: flex;
   flex-wrap: wrap;
 }

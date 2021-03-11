@@ -1,14 +1,22 @@
 .layout-homepage{
   width:100%;
   height:max-content;
+  padding:30px;
 background-size: cover;
   .container{
     margin:0 auto;
     height:100%;
     justify-content: center;
    max-width:1200px;
-    @include flex;
-    flex-wrap: wrap;
+   h1{
+     margin-left:10px;
+     color:#000067;
+     text-transform: uppercase;
+   }
+   .pasta-corta,.pasta-lunga,.pasta-cortissima{
+     @include flex;
+     flex-wrap: wrap;
+   }
   }
 
 a{
