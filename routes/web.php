@@ -16,3 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Route::view('/', 'welcome');
+
+Route::get('/homepage', function () {
+    return view('homepage');
+});
+
+
+// Route::get('/layout', function () {
+//     return view('test-layout.pagina-esempio',
+//         ['name' => 'Taylor']
+//     );
+// });
+
+Route::get('/product/{id}', function($id) {
+    return view('product',
+        ['idProduct' => $id]
+    );
+});
