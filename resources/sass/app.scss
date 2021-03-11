@@ -1,1 +1,20 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
 
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.wrapper{
+  width:100%;
+  height:100%;
+}
+
+ul li{
+  list-style: none;
+}

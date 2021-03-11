@@ -129,10 +129,11 @@
 @extends('layout.app')
 @section('content')
 
-  @foreach ($array as $pasta)
-        {{$pasta['titolo']}}
-        <a></a>
-          {{$pasta['src']}}
+  @foreach ($array as $key=>$pasta)
+    <a href="/product/{{$key + 1}}"><div style="background-image:url({{$pasta['src']}})" class="box">
+      {{-- {{$pasta['titolo']}}
+        {{$pasta['src']}} --}}
+    </div></a>
   @endforeach
 
 @endsection

@@ -1,0 +1,14 @@
+.footer{
+  margin-top:80px;
+  .container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+  @include flex;
+justify-content:center;
+&-left,&-center,&-right {
+  width:30%;
+  margin:10px 10px;
+}
+}
+}

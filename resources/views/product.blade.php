@@ -129,10 +129,9 @@
 
 @extends('layout.app')
 @section('content')
-
-  questa è la pagina prodotto {{ $idProduct }}
-
-  {{ $array[$idProduct]['descrizione'] }}
-
+ {{-- $idProduct --}}
+ <div style="background-image:url({{$array[$idProduct]['src-p']}})" class="box-product">
+ <p>{{ $array[$idProduct]['descrizione'] }}</p>
+ </div>
 
 @endsection

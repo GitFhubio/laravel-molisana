@@ -23,51 +23,61 @@
 </div>
 
 <div class="main">
+  <div class="container">
     @yield('content')
+  </div>
 </div>
 
 <div class="footer">
-<div class="footer-left">
+  <div class="container">
+<div class="container-left">
 <img src="https://via.placeholder.com/90" alt="">
 <ul>
-  <li>Ragione Sociale:La Molisana SPA</li>
-    <li>Sede legale</li>
-      <li>efeff</li>
-        <li>frffr</li>
-        <li>frfrf</li>
-          <li>frfrf</li>
-            <li>frfrfr</li>
-              <li>frfrf</li>
-                <li>rffrfrfr</li>
+  <li>Ragione Sociale:La Molisana S.P.A</li>
+    <li>Sede legale: Contrada Colle delle Alpi,100/A</li>
+      <li>86100-Campobasso(CB)</li>
+        <li>Pec:lamolisana@pec.it</li>
+        <li>Tel:+39 0874 4981</li>
+          <li>Fax: +39 0874 629584</li>
+            <li>info@lamolisana.it(per segnalazioni degli utenti)</li>
+              <li>commerciale@lamolisana.it</li>
+                <li>export@lamolisana.it</li>
+                <li>numero verde 8008198081</li>
+                <li>telefono 3801292455</li>
 </ul>
 </div>
-<div class="footer-center">
-  <h1>PASTIFICIO</h1>
+<div class="container-center">
+  <h3>PASTIFICIO</h3>
 <ul>
 <li>Il pastificio</li>
-<li>ffrfrfr</li>
-<li>rffr</li>
-<li>frfr</li>
-<li>frfrf</li>
-<li>frfr</li>
-<li>frfr</li>
-<li>frfrfrfr</li>
+<li>Grano decorticato a pietra</li>
+<li>Il Molise c'è</li>
+<li>Filiera Integrata</li>
+<li>100 anni di pasta</li>
+<li>Sartoria della pasta</li>
+<li>Spaghetto Quadrato</li>
+<li>Le persone</li>
 </ul>
-<h1>PRODOTTI</h1>
+<h3>PRODOTTI</h3>
 <ul>
 <li>Le classiche</li>
 <li>Le integrali</li>
 <li>Le speciali</li>
 <li>Le biologiche</li>
+<li>Le gluten-Free</li>
+<li>Le Semole</li>
+<li>Le Extra di Lusso</li>
 </ul>
 </div>
-<div class="footer-right">
+<div class="container-right">
+  <h3>COLLEZIONE DA CHEF</h3>
 <ul>
 <li>Collezione da chef</li>
 <li>Grandi cucine</li>
 <li>Biologiche</li>
 <li>Quadrate</li>
 </ul>
+</div>
 </div>
 </div>
 </div>
