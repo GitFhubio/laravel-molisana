@@ -27,7 +27,7 @@
     @yield('content')
   </div>
 
-<div class="footer">
+<div style="background-image:url({{asset('img/footer.jpg')}})" class="footer">
   <div class="container">
 <div class="container-left">
 <img src="{{asset('img/logo2.png')}}" alt="">
