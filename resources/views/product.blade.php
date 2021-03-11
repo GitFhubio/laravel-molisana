@@ -139,12 +139,12 @@
  <div class="descrizione"><p>{{ $array[$idProduct]['descrizione'] }}</p></div>
 </div>
  </div>
-<div class="angle-left">
+<a href="/product/{{$idProduct - 1 }}"><div class="angle-left">
 <i class="fas fa-angle-left"></i>
-</div>
-<div class="angle-right">
+</div></a>
+<a href="/product/{{$idProduct + 1}}"><div class="angle-right">
 <i class="fas fa-angle-right"></i>
-</div>
+</div></a>
   </div>
 
 @endsection
