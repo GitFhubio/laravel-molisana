@@ -7,31 +7,30 @@
     <title>Laravel</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
 <div class="wrapper">
 <div class="header">
-<img class="logo" src="https://via.placeholder.com/90" alt="">
+<img class="logo" src="{{asset('img/logo2.png')}}" alt="">
 <ul>
-  <li>Home</li>
-  <li>Products</li>
-  <li>News</li>
+<li><a href="/homepage">Home</a></li>
+<li><a href="/homepage">Prodotti</a></li>
+  <li><a href="/homepage">News</a></li>
 </ul>
 </div>
 
 <div class="main">
-  <div class="container">
     @yield('content')
   </div>
-</div>
 
 <div class="footer">
   <div class="container">
 <div class="container-left">
-<img src="https://via.placeholder.com/90" alt="">
+<img src="{{asset('img/logo2.png')}}" alt="">
 <ul>
   <li>Ragione Sociale:La Molisana S.P.A</li>
     <li>Sede legale: Contrada Colle delle Alpi,100/A</li>

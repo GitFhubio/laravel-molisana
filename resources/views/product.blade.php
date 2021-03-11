@@ -130,8 +130,14 @@
 @extends('layout.app')
 @section('content')
  {{-- $idProduct --}}
- <div style="background-image:url({{$array[$idProduct]['src-p']}})" class="box-product">
- <p>{{ $array[$idProduct]['descrizione'] }}</p>
+ <div class="layer-product">
+   <div class="container">
+ <div class="box-product">
+    <img src="{{$array[$idProduct]['src-h']}}" alt="">
+   <img src="{{$array[$idProduct]['src-p']}}" alt="">
+ <div class="descrizione"><p>{{ $array[$idProduct]['descrizione'] }}</p></div>
+</div>
  </div>
+  </div>
 
 @endsection

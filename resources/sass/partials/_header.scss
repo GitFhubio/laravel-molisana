@@ -6,8 +6,14 @@
     margin-top:20px;
   }
   ul { margin-top:20px;
+    font-size: 22px;
      li{
     display:inline-block;
+    a{padding:5px;
+    text-decoration: none;}
+    &:hover a {
+      background-color: #A8E6FE;
+    }
   }
 }
 }

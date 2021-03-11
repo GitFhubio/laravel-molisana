@@ -9,6 +9,13 @@ justify-content:center;
 &-left,&-center,&-right {
   width:30%;
   margin:10px 10px;
+  color:#727E91;
 }
+&-center ul li, &-right ul li{margin-top:10px;
+}
+&-left ul li {margin:2px;}
+h3{margin:20px 0;
+  font-size: 26px;
+font-weight: 400;}
 }
 }
