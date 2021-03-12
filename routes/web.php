@@ -13,21 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+  $pasta=config('pasta');
+    return view('homepage',['array'=>$pasta]);
 });
 
-Route::get('/homepage', function () {
-    return view('homepage');
-});
-
-
-Route::get('/product/{id}', function($id) {
+// Route::get('/product',function(){
+//   return redirect('/homepage');
+// });
+Route::get('/product/{id?}', function($id = null) {
+ // dump($id);
+ // exit();
+ if(empty($id)){
+   return redirect('/');
+ }
+    $pasta=config('pasta');
     return view('product',
-        ['idProduct' => $id]
+        ['idProduct' => $id],['array'=>$pasta]
     );
-});
-
-Route::get('/home', function () {
-    return view('home');
 });
