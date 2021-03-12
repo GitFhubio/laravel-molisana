@@ -1,5 +1,4 @@
 @php
-    // il data lo mettiamo qui inizialmente poi lo sposteremo in config
     if ($idProduct>1){
     $prev = $idProduct - 1 ;}
     else {
@@ -32,3 +31,12 @@
   </div>
 
 @endsection
+
+{{-- oppure direttamente in html --}}
+{{-- @if (($idProduct) == count($array))
+  <a href="/product/1">
+@else
+  <a href="/product/{{$idProduct + 1}}">
+@endif
+  <i class="fas fa-chevron-right"></i>
+</a> --}}
