@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>{{Request::route()->getName() === 'homepage' ? 'Homepage' : 'Products'}}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,8 +18,9 @@
 <div class="header">
 <img class="logo" src="{{asset('img/logo2.png')}}" alt="">
 <ul>
-<li><a href="/">Home</a></li>
-<li><a href="/">Prodotti</a></li>
+
+<li><a class="{{Request::route()->getName() === 'homepage' ? 'active' : ''}}" href="/">Home</a></li>
+<li><a class="{{Request::route()->getName() === 'products' ? 'active' : ''}}">Prodotti</a></li>
   <li><a href="/">News</a></li>
 </ul>
 <i class="fas fa-bars"></i>

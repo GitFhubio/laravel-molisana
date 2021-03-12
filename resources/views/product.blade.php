@@ -1,13 +1,13 @@
 @php
     // il data lo mettiamo qui inizialmente poi lo sposteremo in config
-    if ($idProduct>0){
+    if ($idProduct>1){
     $prev = $idProduct - 1 ;}
     else {
     $prev = count($array) - 1;}
     if ($idProduct< count($array) - 1){
     $post = $idProduct + 1 ;}
     else {
-    $post = 0 ;}
+    $post = 1 ;}
 @endphp
 
 @extends('layout.app')

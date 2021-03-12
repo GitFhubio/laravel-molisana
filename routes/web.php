@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
   $pasta=config('pasta');
     return view('homepage',['array'=>$pasta]);
-});
+})->name('homepage');
 
 // Route::get('/product',function(){
 //   return redirect('/homepage');
@@ -42,4 +42,4 @@ if($id > count($pasta)){
     return view('product',
         ['idProduct' => $id],['array'=>$pasta]
     );
-});
+})->name('products');
