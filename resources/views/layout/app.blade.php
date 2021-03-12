@@ -22,6 +22,7 @@
 <li><a href="/">Prodotti</a></li>
   <li><a href="/">News</a></li>
 </ul>
+<i class="fas fa-bars"></i>
 </div>
 
 <div class="main">

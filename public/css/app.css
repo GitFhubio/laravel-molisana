@@ -21,6 +21,19 @@
 .header ul li:hover a {
   background-color: #A8E6FE;
 }
+@media (max-width: 768px) {
+  .header ul {
+    display: none;
+  }
+}
+.header .fa-bars {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header .fa-bars {
+    display: block;
+  }
+}
 
 .layout-homepage {
   width: 100%;

@@ -15,6 +15,22 @@
     &:hover a {
       background-color: #A8E6FE;
     }
+
+  }
+@media (max-width: 768px) {
+display:none;
+ }
+}
+.fa-bars{
+  display:none;
+  @media (max-width: 768px){
+   display:block;
   }
 }
 }
+
+// @media (min-width: 576px) {  }
+//
+// @media (min-width: 768px) {  }
+//
+// @media (min-width: 992px) {  }
