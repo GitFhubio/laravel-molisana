@@ -142,7 +142,7 @@
 <p class="title">{{ $array[$idProduct]['titolo'] }}</p>
     <img src="{{$array[$idProduct]['src-h']}}" alt="">
    <img src="{{$array[$idProduct]['src-p']}}" alt="">
- <div class="descrizione"><p>{!! nl2br($array[$idProduct]['descrizione']) !!}</p></div>
+ <div class="descrizione"><p>{!! $array[$idProduct]['descrizione'] !!}</p></div>
 </div>
  </div>
 <a href="/product/{{$prev }}"><div class="angle-left">
