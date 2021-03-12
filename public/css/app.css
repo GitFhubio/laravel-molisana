@@ -108,11 +108,17 @@
 }
 .layer-product .container {
   margin: 0 auto;
+  padding: 10px;
   height: 100%;
   justify-content: center;
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .layer-product .container {
+    padding: 40px;
+  }
 }
 .layer-product .box-product {
   display: flex;
