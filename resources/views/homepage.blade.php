@@ -135,7 +135,7 @@
 
   @foreach ($array as $key=>$pasta)
     @if ($pasta['tipo'] == "lunga" )
-      <a href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
+      <a class="box-pasta" href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
         {{-- {{$pasta['titolo']}}
           {{$pasta['src']}} --}}
       </div></a>
@@ -146,7 +146,7 @@
 <div class="pasta-corta">
     @foreach ($array as $key=>$pasta)
     @if ($pasta['tipo'] == "corta" )
-      <a href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
+      <a class="box-pasta" href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
         {{-- {{$pasta['titolo']}}
           {{$pasta['src']}} --}}
       </div></a>
@@ -157,7 +157,7 @@
     <div class="pasta-cortissima">
     @foreach ($array as $key=>$pasta)
     @if ($pasta['tipo'] == "cortissima" )
-      <a href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
+      <a  class="box-pasta" href="/product/{{$key}}"><div style="background-image:url({{$pasta['src']}})" class="box">
         {{-- {{$pasta['titolo']}}
           {{$pasta['src']}} --}}
       </div></a>
