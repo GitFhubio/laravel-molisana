@@ -18,9 +18,9 @@
 <div class="header">
 <img class="logo" src="{{asset('img/logo2.png')}}" alt="">
 <ul>
-<li><a href="/homepage">Home</a></li>
-<li><a href="/homepage">Prodotti</a></li>
-  <li><a href="/homepage">News</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="/">Prodotti</a></li>
+  <li><a href="/">News</a></li>
 </ul>
 </div>
 

@@ -29,9 +29,16 @@ Route::get('/product/{id?}', function($id = null) {
  // dump($id);
  // exit();
  if(empty($id)){
-   return redirect('/');
+   // return redirect('/');
+   abort(404);
  }
     $pasta=config('pasta');
+
+// il count torna il conteggio di un essere umano perciò va bene
+if($id > count($pasta)){
+  abort(404);
+}
+
     return view('product',
         ['idProduct' => $id],['array'=>$pasta]
     );
