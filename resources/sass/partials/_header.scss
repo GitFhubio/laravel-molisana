@@ -23,6 +23,8 @@ display:none;
 }
 .fa-bars{
   display:none;
+  font-size: 25px;
+  margin:20px 0;
   @media (max-width: 768px){
    display:block;
   }

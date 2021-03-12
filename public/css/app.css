@@ -28,6 +28,8 @@
 }
 .header .fa-bars {
   display: none;
+  font-size: 25px;
+  margin: 20px 0;
 }
 @media (max-width: 768px) {
   .header .fa-bars {
@@ -136,7 +138,7 @@
 .footer {
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-bottom: 100px;
+  padding: 0 20px 100px 20px;
 }
 .footer .container {
   width: 100%;
@@ -158,7 +160,6 @@
 }
 @media (max-width: 576px) {
   .footer .container-left, .footer .container-center, .footer .container-right {
-    text-align: center;
     width: 100%;
   }
 }
