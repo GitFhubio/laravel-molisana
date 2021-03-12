@@ -23,7 +23,15 @@
         <li><a class="{{Request::route()->getName() === 'products' ? 'active' : ''}}" href="/product/1">Prodotti</a></li>
         <li><a class="{{Request::route()->getName() === 'news' ? 'active' : ''}}" href="{{url('news')}}">News</a></li>
       </ul>
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars">
+        <div class="dropdown-content">
+           <ul>
+             <li><a href="/">Home</a></li>
+             <li><a href="/product/1">Prodotti</a></li>
+             <li><a href="{{url('news')}}">News</a></li>
+           </ul>
+        </div>
+      </i>
     </div>
 
     <div class="main">
