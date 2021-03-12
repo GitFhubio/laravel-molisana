@@ -43,3 +43,8 @@ if($id > count($pasta)){
         ['idProduct' => $id],['array'=>$pasta]
     );
 })->name('products');
+
+Route::get('/news', function () {
+  $news=config('news');
+    return view('news',['array'=>$news]);
+})->name('news');
