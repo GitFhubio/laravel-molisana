@@ -131,10 +131,22 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 576px) {
+  .footer .container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .footer .container-left, .footer .container-center, .footer .container-right {
   width: 30%;
   margin: 10px 10px;
   color: #727E91;
+}
+@media (max-width: 576px) {
+  .footer .container-left, .footer .container-center, .footer .container-right {
+    text-align: center;
+    width: 100%;
+  }
 }
 .footer .container-center ul li, .footer .container-right ul li {
   margin-top: 10px;

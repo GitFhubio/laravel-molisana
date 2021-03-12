@@ -8,7 +8,14 @@ padding-bottom:100px;
     margin:0 auto;
   @include flex;
 justify-content:center;
+@media (max-width: 576px) {
+align-items:center;
+ flex-direction:column;}
 &-left,&-center,&-right {
+  @media (max-width: 576px) {
+text-align: center;
+  width:100%;
+}
   width:30%;
   margin:10px 10px;
   color:#727E91;
