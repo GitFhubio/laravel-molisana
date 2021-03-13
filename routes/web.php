@@ -48,3 +48,35 @@ Route::get('/news', function () {
   $news=config('news');
     return view('news',['array'=>$news]);
 })->name('news');
+
+
+// alternative per filtrare
+Route::get('/test', function () {
+  $pasta = config('pasta');
+
+  $pastalunga = collect($pasta)->where('tipo', 'lunga');
+  $pastacorta = collect($pasta)->where('tipo', 'corta');
+  $pastacortissima = collect($pasta)->where('tipo', 'cortissima');
+  // dd($pastacorta);
+// dd($pastacorta);
+// oppure
+
+  // $pastalunga = array_filter($pasta, function($item) {
+  //   return $item['tipo'] === 'lunga';
+  // });
+  // pastacorta = array_filter($pasta, function($item) {
+  //   return $item['tipo'] === 'corta';
+  // });
+  // $pastacortissima = array_filter($pasta, function($item) {
+  //   return $item['tipo'] === 'cortissima';
+  // });
+
+  $data = [
+    'types_list' => [
+      'lunghe' => $pastalunga,
+      'corte' => $pastacorta,
+      'cortissime' => $pastacortissima,
+    ]
+  ];
+  return view('test', $data);
+})->name('test');
