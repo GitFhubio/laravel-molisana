@@ -53,13 +53,18 @@ img{
     transform:translate(0,-50%);
     background-color: rgba(#eee,0.5);
   }
-  .angle-right{
-    right:0;
-    border-radius:3px 0 0 3px;
+  .angle-left{
+    border-radius:0 3px 3px 0;
+    &:hover i {
+      color:black;
+    }
   }
   .angle-right{
     right:0;
-    border-radius:0 3px 3px 0;
+    border-radius:3px 0 0 3px;
+    &:hover i {
+      color:black;
+    }
   }
   .container{
     margin:0 auto;

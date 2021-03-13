@@ -19,9 +19,9 @@
       <img class="logo" src="{{asset('img/logo2.png')}}" alt="">
       <ul>
 
-        <li><a class="{{Request::route()->getName() === 'homepage' ? 'active' : ''}}" href="/">Home</a></li>
-        <li><a class="{{Request::route()->getName() === 'products' ? 'active' : ''}}" href="/product/1">Prodotti</a></li>
-        <li><a class="{{Request::route()->getName() === 'news' ? 'active' : ''}}" href="{{url('news')}}">News</a></li>
+        <li class="{{Request::route()->getName() === 'homepage' ? 'active' : ''}}"><a  href="/">Home</a></li>
+        <li class="{{Request::route()->getName() === 'products' ? 'active' : ''}}"><a  href="/product/1">Prodotti</a></li>
+        <li class="{{Request::route()->getName() === 'news' ? 'active' : ''}}"><a  href="{{url('news')}}">News</a></li>
       </ul>
       <i class="fas fa-bars">
         <div class="dropdown-content">
