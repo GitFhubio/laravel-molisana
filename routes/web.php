@@ -84,3 +84,8 @@ Route::get('/test', function () {
   // dd($data);
   return view('test', $data);
 })->name('test');
+
+Route::get('/prova', function () {
+  $pasta=config('pasta');
+    return view('prova',['array'=>$pasta]);
+})->name('prova');
