@@ -1,3 +1,19 @@
+# Laravel Molisana
+
+Clone sito pasta molisana, primi utilizzi di blade template e routes.
+
+Sono state create la homepage(che ha tutte le paste filtrate per tipologia) e la pagina prodotti con dettagli del prodotto selezionato nella home: quest'ultima ha uno slider che permette di switchare da una pagina prodotto all'altra.
+
+Utilizzati @yield e @section per avere un layout unico per le due viste, che cambiano solo nella parte centrale. 
+
+Il sito è responsive(tutto flex, a sto giro niente Bootstrap).
+
+Bonus personale con pagina news sempre con css flexbox ma con "effetto masonry".
+
+![Screenshot](obiettivo.png) 
+![Screenshot](obiettivo2.png) 
+![Screenshot](news.png) 
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
