@@ -20,10 +20,10 @@
 
 a{
   display:block;
-  width:30%;
+  width:calc(100% / 3 - 20px);
   margin:10px 10px;
 @media (max-width: 768px) {
-  width:46%;
+  width:calc(100% / 2 - 20px);
   }
 @media (max-width: 576px) {
 width:100%;
