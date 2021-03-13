@@ -70,10 +70,9 @@ Route::get('/test', function () {
   // $pastacortissima = array_filter($pasta, function($item) {
   //   return $item['tipo'] === 'cortissima';
   // });
-la struttura è
 
 // array di array associativi
-// col for each esterno mi giro i tipi 
+// col for each esterno mi giro i tipi
 // con quello interno i singoli array col dettaglio di prodotti
   $data = [
     'types_list' => [

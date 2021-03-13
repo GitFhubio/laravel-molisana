@@ -124,3 +124,5 @@ $data = '[
   ]';
 
   return json_decode($data, true);
+
+// ottengo array di array associativi
